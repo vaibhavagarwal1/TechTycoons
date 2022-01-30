@@ -1,5 +1,6 @@
-Spring 2017  
-Course : Software Engineering for Web Applications
+Tech Tycoons
+Vaibhav Agarwal
+Lavansh Arora
 
 STOCK FORECASTING SYSTEM - __"PREDSTOCKS"__
 ===========================================
