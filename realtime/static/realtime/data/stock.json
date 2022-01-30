@@ -1,0 +1,44 @@
+[
+    {
+        "name": "GOOG   Alphabet Inc", 
+        "slug": "goog"
+    }, 
+    {
+        "name": "AAPL   Apple Inc.", 
+        "slug": "aapl"
+    },
+    {
+        "name": "fb     Facebook", 
+        "slug": "fb"
+    },
+    {
+        "name": "EA   EASports", 
+        "slug": "ea"
+    },
+    {
+        "name": "MSFT   Microsoft", 
+        "slug": "msft"
+    },
+    {
+        "name": "YHOO   Yahoo", 
+        "slug": "yhoo"
+    },
+    {
+        "name": "AMZN   Amazon", 
+        "slug": "amzn"
+    },
+    {
+        "name": "WMT   walmart", 
+        "slug": "wmt"
+    },
+    {
+        "name": "SNE   Sony", 
+        "slug": "sne"
+    },
+    {
+        "name": "NINOY   Nikon", 
+        "slug": "ninoy"
+    }
+]
+
+

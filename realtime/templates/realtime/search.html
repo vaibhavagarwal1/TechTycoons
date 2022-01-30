@@ -1,0 +1,232 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="background-image: url(http://i.imgur.com/Nbi7bYI.jpg);">
+
+<HTML>
+
+<HEAD>
+{% load staticfiles %}
+
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link href="{% static 'realtime/css/style.css' %}" rel="stylesheet" type="text/css" />	
+
+  <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css"  href="{% static 'realtime/css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'realtime/fonts/font-awesome/css/font-awesome.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'realtime/css/menusearch.css' %}">
+
+    <!-- Stylesheet
+    ================================================== -->
+    <link rel="stylesheet" type="text/css"  href="{% static 'realtime/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'realtime/css/responsive.css' %}">
+
+    <script type="text/javascript" src="{% static 'realtime/js/modernizr.custom.js' %}"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Raleway:500,600,700,100,800,900,400,200,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+
+
+
+    <script type="text/javascript" src="{% static 'realtime/js/jquery.1.11.1.js' %}"></script>
+
+    <script type="text/javascript" src="{% static 'realtime/js/jquery-1.10.2.min.js' %}"></script>
+
+    <script src="{% static 'realtime/js/handlebars.js' %}"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+</HEAD>
+
+<BODY>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'realtime/js/jquery.1.11.1.js'%}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="{% static 'realtime/js/bootstrap.js'%}"></script>
+
+    <!-- Javascripts
+    ================================================== -->
+     <script src="{% static 'realtime/js/typeahead.js'%}"></script>
+      <script src="{% static 'realtime/js/search.js'%}"></script>
+
+	<div class="header">
+    	<div class="logo">
+     		<h1><a href="#"><span>Pred</span>Stocks<br><small>One stop solution to smart prediction !</small></a></h1>
+    	</div>
+	    <div class="menu_nav">
+	      <ul>
+	        <li><a href="index.html">Home</a></li>
+	       <li class="active"><a href="prediction.html">Prediction</a></li>
+	        
+	        <li><a href="news.html">News</a></li>
+	        <li><a href="contact.html">Contact Us</a></li>
+	      </ul>
+	    </div>
+    </div>
+
+   <div class="clr"></div>
+    <div class="hbg"><img src="{% static 'realtime/img/header.jpeg' %}" width="970" height="200" alt="" class="fl" />
+
+            
+          </div>
+          <div class="clr"></div>
+     </div>
+     <TITLE>{{name}}</TITLE>
+
+  <h1> Stock Forecast </h1>
+
+  
+<table align="center" class="table table-hover">
+    <tr>
+      <th>#</th>
+      <th>Duration </th>
+      <th>Bayesian Curve Fitting</th>
+      <th>Artificial Neural Network</th>
+      <th>State Vector Machine</th>
+    </tr>
+        <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>5 minutes</td>
+                  <td>{{ baye1 }}</td>
+                  <td>{{ neu1 }}</td>
+                  <td>{{pred3}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>10 minutes </td>
+                  <td>{{ baye2 }}</td>
+                  <td>{{ neu2 }}</td>
+                  <td>{{pred3}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>15 minutes</td>
+                  <td>{{ baye3 }}</td>
+                  <td>{{ neu3 }}</td>
+                  <td>{{pred3}}</td>
+                </tr>
+              </tbody>
+              <br>
+          <tbody>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>2 hours</td>
+                  <td>{{ baye4 }}</td>
+                  <td>{{ neu4 }}</td>
+                  <td>{{pred3}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>4 hours</td>
+                  <td>{{ baye5 }}</td>
+                  <td>{{ neu5 }}</td>
+                  <td>{{pred3}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td >6 hours</td>
+                  <td>{{ baye6 }}</td>
+                  <td>{{ neu6 }}</td>
+                  <td>{{pred3}}</td>
+                </tr>
+              </tbody>
+              <br>
+          <tbody>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>1 day</td>
+                  <td>{{ baye7 }} </td>
+                  <td>{{ neu7 }}</td>
+                  <td>{{pred3}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>1 month</td>
+                  <td>{{ baye8 }}</td>
+                  <td>{{ neu8 }}</td>
+                  <td>{{pred3}}</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>2 months</td>
+                  <td>{{ baye9 }}</td>
+                  <td>{{ neu9 }}</td>
+                  <td>{{pred3}}</td>
+                </tr>
+              </tbody>
+</table>
+ 
+ <br>
+<div align="center">
+<table align="center" class="table table-hover">
+    <tr>
+      <th>#</th>
+      <th>Relative Strength Index </th>
+      <th>Moving Average</th>
+      <th>Rate of Change</th>
+    </tr>
+        <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>{{ RSIndex }}</td>
+                  <td> {{ MA }}</td>
+                  <td> ROC </td>
+               </tr>
+        </tbody>
+</table>
+
+
+<br>
+<table align="center" class="table table-hover">
+    <tr>
+      <th>#</th>
+      <th>Query </th>
+      <th>Price</th>
+    </tr>
+        <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td> Latest Price </td>
+                  <td>{{LatestPrice}}</td>
+               </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td> Maximum Price ( past 10 days )</td>
+                  <td>{{ MaximumPrice }}</td>
+               </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Lowest Price (Past 1 year)</td>
+                  <td>{{ MinimumPrice}} </td>
+               </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Average Price (past 1 year)</td>
+                  <td>{{ AveragePrice}}</td>
+               </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>List of below avg companies </td>
+                  <td>{{ BelowAverage }}</td>
+               </tr>
+
+  </tbody>
+
+</table>
+</div>
+  <!-- TWITTER API -->
+ <!--      
+      <a class="twitter-timeline" data-lang="en" data-height="300" data-theme="light" data-link-color="#2B7BB9" href="https://twitter.com/{{name}}">
+      </a> 
+      <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+      
+        <div class="footer">
+      <div class="footer_resize">
+        <p class="lf">&copy; Copyright <a href="#">PredStocks</a>.</p>
+    
+      </div>
+    </div>
+</BODY>
+</HTML>
